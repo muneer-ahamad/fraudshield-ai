@@ -1,0 +1,31 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+.env
+.DS_Store
+# Original datasets and generated outputs should not be committed to GitHub.
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+models/
+# Local environments, secrets and backups
+.venv*/
+.env*
+.streamlit/secrets.toml
+streamlit_app_backup.py
+requirements-original.txt
+*.zip
+
+# Keep generated artifacts out, except deployment files and reports
+artifacts/*
+!artifacts/xgboost.joblib
+!artifacts/threshold_selection.json
+!artifacts/test_metrics.json
+!artifacts/validation_metrics.json
+!artifacts/model_comparison.csv
+!artifacts/api_latency.json
+
+# The dashboard needs the complete validation split
+!data/processed/val.csv.gz

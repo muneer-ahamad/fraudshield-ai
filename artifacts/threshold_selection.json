@@ -1,0 +1,27 @@
+{
+  "selection_split": "validation",
+  "selection_rule": "Highest recall with FPR <= 0.01",
+  "max_false_positive_rate": 0.01,
+  "selected_model": "xgboost",
+  "selected_threshold": 0.56126684,
+  "results": {
+    "logistic_regression": {
+      "threshold": 0.7023300000323918,
+      "precision": 0.2071256038647343,
+      "recall": 0.30035026269702275,
+      "false_positive_rate": 0.009881244449796054,
+      "fraud_caught": 343,
+      "fraud_missed": 799,
+      "false_alarms": 1313
+    },
+    "xgboost": {
+      "threshold": 0.56126684,
+      "precision": 0.22433460076045628,
+      "recall": 0.30998248686514884,
+      "false_positive_rate": 0.009211457126085582,
+      "fraud_caught": 354,
+      "fraud_missed": 788,
+      "false_alarms": 1224
+    }
+  }
+}

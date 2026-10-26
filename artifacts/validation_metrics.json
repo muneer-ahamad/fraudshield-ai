@@ -1,0 +1,44 @@
+{
+  "evaluation_split": "validation",
+  "selection_metric": "average_precision",
+  "provisional_best_model": "logistic_regression",
+  "features": [
+    "TX_AMOUNT",
+    "TX_HOUR",
+    "IS_WEEKEND",
+    "AMOUNT_VS_AVG",
+    "TX_COUNT_24H"
+  ],
+  "train_rows": 594735,
+  "validation_rows": 134020,
+  "validation_fraud_rate": 0.008521116251305775,
+  "models": {
+    "logistic_regression": {
+      "average_precision": 0.2922891330913447,
+      "precision": 0.019209619473568442,
+      "recall": 0.45884413309982486,
+      "f1": 0.036875439831104855,
+      "false_positive_rate": 0.20134258492752752,
+      "true_positives": 524,
+      "false_positives": 26754,
+      "false_negatives": 618,
+      "true_negatives": 106124,
+      "threshold": 0.5,
+      "fit_seconds": 0.9547830000010435
+    },
+    "xgboost": {
+      "average_precision": 0.2790311409748578,
+      "precision": 0.1125948406676783,
+      "recall": 0.3248686514886165,
+      "f1": 0.1672301104349786,
+      "false_positive_rate": 0.022005147578982226,
+      "true_positives": 371,
+      "false_positives": 2924,
+      "false_negatives": 771,
+      "true_negatives": 129954,
+      "threshold": 0.5,
+      "fit_seconds": 5.5364438999968115
+    }
+  },
+  "note": "Synthetic data. Test set untouched. Threshold 0.5 is a starting point."
+}

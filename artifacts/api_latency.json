@@ -1,0 +1,22 @@
+{
+  "timestamp_utc": "2026-10-26T10:01:51.781597+00:00",
+  "requests": 200,
+  "unique_payloads": 200,
+  "warmup_requests": 20,
+  "concurrency": 1,
+  "connection_reused": true,
+  "errors": 0,
+  "measurement": "Local HTTP round-trip including request encoding and response decoding; excludes startup",
+  "p50_ms": 4.532899998594075,
+  "p95_ms": 5.514904994925017,
+  "python": "3.12.10",
+  "os": "Windows-11-10.0.26200-SP0",
+  "processor": "Intel64 Family 6 Model 140 Stepping 1, GenuineIntel",
+  "server": {
+    "status": "ready",
+    "model": "xgboost",
+    "threshold": 0.56126684,
+    "model_sha256": "ac00ed3a1ba0643d8f7354c80a52ec0e3c1a797fe0762fb8b7d5cc9ce99c6f57"
+  },
+  "note": "Not a production load test; record CPU/RAM and server command with any published result."
+}

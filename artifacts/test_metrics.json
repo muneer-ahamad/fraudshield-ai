@@ -1,0 +1,20 @@
+{
+  "evaluation_split": "test",
+  "model": "xgboost",
+  "threshold": 0.56126684,
+  "transactions": 134251,
+  "fraud_cases": 1210,
+  "metrics": {
+    "average_precision": 0.297323650403412,
+    "precision": 0.24294478527607363,
+    "recall": 0.32727272727272727,
+    "f1": 0.27887323943661974,
+    "false_positive_rate": 0.00927533617456273,
+    "true_positives": 396,
+    "false_positives": 1234,
+    "false_negatives": 814,
+    "true_negatives": 131807,
+    "threshold": 0.56126684
+  },
+  "note": "Synthetic dataset. Model and threshold selected on validation data before test evaluation."
+}
